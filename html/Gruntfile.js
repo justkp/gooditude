@@ -82,9 +82,9 @@ module.exports = function(grunt) {
 					variables: {
 						environment:{
 							id: "test",
-							host: "",
+							host: "http://www.gooditude.com/",
 							dest: "dist/test/",
-							dir: "/",
+							dir: "",
 							gaID: "UA-"
 						}
 					}
@@ -210,8 +210,8 @@ module.exports = function(grunt) {
 					}
 				},
 				files: {
-					"<%= environment.dest %>index.html": "src/template/page/home.jade",
-					"<%= environment.dest %>about/about/index.html": "src/template/page/about.jade"
+					"<%= environment.dest %>index.html": "src/template/page/home.jade"
+					// "<%= environment.dest %>about/index.html": "src/template/page/about.jade"
 				}
 			}
 		},
